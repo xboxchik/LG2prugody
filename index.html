@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <meta name="description" content="LogiGamer 2.0 — каталог найкращих пригодницьких ігoр. Досліджуй нові світи, розгадуй таємниці та завантажуй топові ігри!">
+    <title>LogiGamer 2.0 — Пригоди</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LogiGamer 2.0</div>
+
+    <nav>
+        <a href="#home">Головна</a>
+
+        <div class="catalog-wrapper">
+            <button class="catalog-btn" id="catalogBtn" type="button">
+                Каталог ▾
+            </button>
+
+            <div class="catalog-menu" id="catalogMenu">
+                <button type="button" data-category="all">
+                    <a href="https://xboxchik.github.io/LG2/">🎮 Всі ігри</a>
+                </button>
+
+                <button type="button" data-category="action">
+                    <a href="https://xboxchik.github.io/LG2ekshn/">⚔️ Екшн</a>
+                </button>
+
+                <button type="button" data-category="rpg">
+                    <a href="https://xboxchik.github.io/LG2rpg/">🧙 RPG</a>
+                </button>
+
+                <button type="button" data-category="strategy">
+                    <a href="https://xboxchik.github.io/LG2strategi/">♟️ Стратегії</a>
+                </button>
+
+                <button type="button" data-category="simulator">
+                    <a href="https://xboxchik.github.io/LG2simulator/">🚗 Симулятори</a>
+                </button>
+
+                <button type="button" data-category="adventure">
+                    <a href="https://xboxchik.github.io/LG2prugody/">🗺️ Пригоди</a>
+                </button>
+
+                <button type="button" data-category="arcade">
+                    <a href="https://xboxchik.github.io/LG2arcade/">👾 Аркади</a>
+                </button>
+
+                <button type="button" data-category="puzzle">
+                    <a href="https://xboxchik.github.io/LG2golova/">🧩 Головоломки</a>
+                </button>
+            </div>
+        </div>
+
+        <a href="#games">Ігри</a>
+
+        <a
+            href="https://t.me/LogiGamerbot"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Допомога
+        </a>
+
+        <button class="cart-btn" id="cartBtn" type="button">
+            🛒 Кошик
+            <span id="cartCount">0</span>
+        </button>
+    </nav>
+</header>
+
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>LogiGamer 2.0</h1>
+
+        <p>
+            Вирушай у незабутні подорожі, досліджуй стародавні руїни та розкривай секрети невідомих світів!
+        </p>
+
+        <button
+            class="hero-button"
+            id="letsGo"
+            type="button"
+        >
+           Обирай свою наступну пригоду!
+        </button>
+    </div>
+</section>
+
+
+<section class="search-section">
+    <h2>Знайти пригодницьку гру</h2>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Введи назву пригодницької гри..."
+            autocomplete="off"
+        >
+    </div>
+</section>
+
+
+<section class="products" id="games">
+
+    <div class="section-title">
+        <h2>Каталог пригодницьких ігор</h2>
+
+        <div id="categoryTitle">
+            Пригоди
+        </div>
+    </div>
+
+
+    <div class="grid" id="gamesGrid">
+
+        <!-- 1 -->
+        <div class="card"
+             data-name="Uncharted: Legacy of Thieves Collection"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1659420/header.jpg"
+                alt="Uncharted: Legacy of Thieves Collection"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Uncharted 4</h3>
+                <p class="description">Захоплива кінематографічна пригода Нейтана Дрейка у пошуках піратських скарбів.</p>
+                <div class="price">1 499 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Uncharted 4"
+                            data-price="1499">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/1659420/UNCHARTED_Legacy_of_Thieves_Collection/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 2 -->
+        <div class="card"
+             data-name="Shadow of the Tomb Raider"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/750920/header.jpg"
+                alt="Shadow of the Tomb Raider"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Shadow of the Tomb Raider</h3>
+                <p class="description">Фінальна глава становлення Лари Крофт у смертоносних джунглях та гробницях майя.</p>
+                <div class="price">999 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Shadow of the Tomb Raider"
+                            data-price="999">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/750920/Shadow_of_the_Tomb_Raider_Definitive_Edition/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 3 -->
+        <div class="card"
+             data-name="Stray"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1181590/header.jpg"
+                alt="Stray"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Stray</h3>
+                <p class="description">Подорож бродячого кота у неоновому кібермісті, заселеному роботами.</p>
+                <div class="price">599 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Stray"
+                            data-price="599">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/1181590/Stray/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 4 -->
+        <div class="card"
+             data-name="Hollow Knight"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/header.jpg"
+                alt="Hollow Knight"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Hollow Knight</h3>
+                <p class="description">Епічна пригода у величезному таємничому підземному королівстві жуків.</p>
+                <div class="price">329 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Hollow Knight"
+                            data-price="329">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/367520/Hollow_Knight/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 5 -->
+        <div class="card"
+             data-name="It Takes Two"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1426210/header.jpg"
+                alt="It Takes Two"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>It Takes Two</h3>
+                <p class="description">Неймовірна кооперативна пригода про лялькову пару, що рятує свої стосунки.</p>
+                <div class="price">1 199 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="It Takes Two"
+                            data-price="1199">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/1426210/It_Takes_Two/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 6 -->
+        <div class="card"
+             data-name="Ori and the Will of the Wisps"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1057090/header.jpg"
+                alt="Ori and the Will of the Wisps"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Ori and the Will of the Wisps</h3>
+                <p class="description">Казкова та зворушлива пригода духа Орі у мальовничому світі.</p>
+                <div class="price">599 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Ori and the Will of the Wisps"
+                            data-price="599">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 7 -->
+        <div class="card"
+             data-name="A Plague Tale: Requiem"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1182900/header.jpg"
+                alt="A Plague Tale: Requiem"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>A Plague Tale: Requiem</h3>
+                <p class="description">Емоційна подорож брата й сестри крізь похмуру середньовічну Францію.</p>
+                <div class="price">999 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="A Plague Tale: Requiem"
+                            data-price="999">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/1182900/A_Plague_Tale_Requiem/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 8 -->
+        <div class="card"
+             data-name="Life is Strange"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/319630/header.jpg"
+                alt="Life is Strange"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Life is Strange</h3>
+                <p class="description">Атмосферна інтерактивна пригода про дівчину, яка вміє повертати час назад.</p>
+                <div class="price">399 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Life is Strange"
+                            data-price="399">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/319630/Life_is_Strange__Episode_1/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 9 -->
+        <div class="card"
+             data-name="Subnautica"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg"
+                alt="Subnautica"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Subnautica</h3>
+                <p class="description">Захопливе дослідження глибоководного океану на чужій інопланетній планеті.</p>
+                <div class="price">599 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Subnautica"
+                            data-price="599">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/264710/Subnautica/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 10 -->
+        <div class="card"
+             data-name="Outer Wilds"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753640/header.jpg"
+                alt="Outer Wilds"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Outer Wilds</h3>
+                <p class="description">Унікальне дослідження сонячної системи, що застрягла у часовій петлі.</p>
+                <div class="price">499 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Outer Wilds"
+                            data-price="499">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/753640/Outer_Wilds/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 11 -->
+        <div class="card"
+             data-name="Journey"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/638230/header.jpg"
+                alt="Journey"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Journey</h3>
+                <p class="description">Медитативна та візуально заворожуюча подорож безмежною пустелею.</p>
+                <div class="price">299 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Journey"
+                            data-price="299">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/638230/Journey/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 12 -->
+        <div class="card"
+             data-name="Little Nightmares II"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/header.jpg"
+                alt="Little Nightmares II"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Little Nightmares II</h3>
+                <p class="description">Моторошна пригодницька платформа про хлопчика Моно у викривленому світі.</p>
+                <div class="price">599 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Little Nightmares II"
+                            data-price="599">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/1086940/Little_Nightmares_II/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 13 -->
+        <div class="card"
+             data-name="Kena: Bridge of Spirits"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1950640/header.jpg"
+                alt="Kena: Bridge of Spirits"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Kena: Bridge of Spirits</h3>
+                <p class="description">Казкова пригодницька гра про духівника з дивовижною графікою стилю Pixar.</p>
+                <div class="price">799 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Kena: Bridge of Spirits"
+                            data-price="799">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/1950640/Kena_Bridge_of_Spirits/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 14 -->
+        <div class="card"
+             data-name="Firewatch"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/383870/header.jpg"
+                alt="Firewatch"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Firewatch</h3>
+                <p class="description">Захоплива детективна пригода наглядача за лісом у диких лісах Вайомінгу.</p>
+                <div class="price">399 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Firewatch"
+                            data-price="399">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/383870/Firewatch/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 15 -->
+        <div class="card"
+             data-name="Sea of Thieves"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172620/header.jpg"
+                alt="Sea of Thieves"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Sea of Thieves</h3>
+                <p class="description">Піратська пригода у відкритому морі з пошуком скарбів та морськими битвами.</p>
+                <div class="price">899 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Sea of Thieves"
+                            data-price="899">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/1172620/Sea_of_Thieves_2024_Edition/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 16 -->
+        <div class="card"
+             data-name="Death Stranding"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1850570/header.jpg"
+                alt="Death Stranding"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Death Stranding</h3>
+                <p class="description">Унікальна масштабна пригода від Хідео Кодзіми про об'єднання розколотого світу.</p>
+                <div class="price">1 199 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Death Stranding"
+                            data-price="1199">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/1850570/DEATH_STRANDING_DIRECTORS_CUT/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 17 -->
+        <div class="card"
+             data-name="The Last of Us Part I"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1888930/header.jpg"
+                alt="The Last of Us Part I"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>The Last of Us Part I</h3>
+                <p class="description">Культова пригодницька драма про Джоела та Еллі у постапокаліптичних США.</p>
+                <div class="price">1 699 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="The Last of Us Part I"
+                            data-price="1699">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 18 -->
+        <div class="card"
+             data-name="No Man's Sky"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/275850/header.jpg"
+                alt="No Man's Sky"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>No Man's Sky</h3>
+                <p class="description">Безкінечні космічні пригоди та дослідження мільярдів унікальних планет.</p>
+                <div class="price">999 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="No Man's Sky"
+                            data-price="999">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/275850/No_Mans_Sky/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 19 -->
+        <div class="card"
+             data-name="Inside"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304430/header.jpg"
+                alt="Inside"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>INSIDE</h3>
+                <p class="description">Похмура та неймовірно атмосферна пригодницька головоломка від творців Limbo.</p>
+                <div class="price">399 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Inside"
+                            data-price="399">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/304430/INSIDE/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 20 -->
+        <div class="card"
+             data-name="Tchia"
+             data-category="adventure">
+
+            <img
+                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1496590/header.jpg"
+                alt="Tchia"
+            >
+
+            <div class="card-content">
+                <span class="category">Пригоди</span>
+                <h3>Tchia</h3>
+                <p class="description">Яскрава тропічна пригода у відкритому світі за мотивами Нової Каледонії.</p>
+                <div class="price">599 ₴</div>
+
+                <div class="card-buttons">
+                    <button class="add-cart"
+                            data-name="Tchia"
+                            data-price="599">
+                        🛒 В кошик
+                    </button>
+
+                    <a class="download"
+                       href="https://store.steampowered.com/app/1496590/Tchia/"
+                       target="_blank">
+                        Скачати
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CART -->
+
+<div class="overlay" id="cartOverlay">
+
+    <aside class="cart">
+
+        <button
+            class="close"
+            id="closeCart"
+            type="button"
+        >
+            ✕
+        </button>
+
+        <h2>🛒 Кошик</h2>
+
+        <div id="cartItems">
+            <p class="empty-cart">
+                🛒 Кошик порожній
+            </p>
+        </div>
+
+        <div class="cart-bottom">
+
+            <div class="total">
+                <span>Разом:</span>
+
+                <strong id="cartTotal">
+                    0₴
+                </strong>
+            </div>
+
+            <button
+                class="clear-cart"
+                id="clearCart"
+                type="button"
+            >
+                Очистити кошик
+            </button>
+
+            <button
+                class="checkout"
+                id="checkout"
+                type="button"
+            >
+                Оформити замовлення
+            </button>
+
+        </div>
+
+    </aside>
+</div>
+
+
+<footer>
+    © 2026 LogiGamer — Усі права захищені
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
